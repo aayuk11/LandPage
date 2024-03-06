@@ -1,0 +1,192 @@
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family:Lucida Sans Regular ;
+    }
+    html,body{
+        height: 100%;
+        width: 100%;
+    }
+    #main{
+        position:relative;
+        overflow: hidden;
+    }    
+    #page{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background: url('https://wallpapercave.com/wp/wp8414365.jpg');
+        background-size: cover;
+    } 
+    nav{
+        width: 100%;
+        height: 100px;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo{
+        width: 2px;
+        cursor: pointer;
+        align-self: flex-start;
+    
+    }
+    .menu a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px;
+        position: relative;
+    }
+    .menu a:before{
+        content:'';
+        position: absolute;
+        top:0;
+        left:0;
+        width: 0%;
+        height: 100%;
+        border-bottom:2px solid indianred;
+        transition: 0.4s linear;
+    }
+    .menu a:hover:before{
+        width:90% ;
+
+    }
+    .register a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px;
+        background: indianred;
+        border-radius: 8px;
+        transition: 0.4s;
+    }
+    .register a:hover{
+        background: transparent;
+        border: 1px solid indianred;
+        
+    }
+    .headertxt{
+        max-width: 650px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color:white;
+         }
+    .headertxt span{
+        letter-spacing: 4px;
+    }    
+    .headertxt h1{
+        font-size: 3em;
+    }
+    .headertxt h2{
+        font-size: 2em;
+    }
+    .headertxt a{
+        text-decoration: none;
+        background: indianred;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px ;
+        transition: 0.4s;
+    }
+    .headertxt a:hover{
+        background: transparent;
+        border: 1px solid indianred;
+    }
+    #page1{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgb(185,114,114);
+        background: linear-gradient(90deg, rgba(185,114,114,0.5402953417695203) 0%, rgba(227,0,0,0.5851132689403886) 0%, rgba(244,16,6,0.61872671431854) 44%, rgba(226,0,0,0.6579424005930496) 100%);
+         }
+    #r1{
+        position: absolute;
+        height: 50%;
+        width: 30%;
+        right: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;  
+        height: 35vw;
+        width: 35vw;
+        background: rgba(217, 174, 108, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 2px solid rgba(217, 174, 108, 0.3);
+    }
+    #r2{
+        position: absolute;
+        height: 60%;
+        width: 40%;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #t1>h3{
+        font-size: 20px;
+        font-weight: 500;
+        color:white;
+    }
+    /*#r1{
+        right: 10%;
+        top: 30%;
+        transform: translateY(-50%);
+        height: 70%;
+        width: 40%;
+        position: relative;
+        display: flex;
+        align-items: center;  
+        height: 35vw;
+        width: 35vw;
+        background: rgba(217, 174, 108, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 2px solid rgba(217, 174, 108, 0.3);
+    }*/
+    #line{
+        display: flex;
+        flex-direction: column;
+       
+        padding: 20px;
+        height: 100%;
+        width: 100%;
+    }
+    #line>h2{
+        padding-top: 10px ;
+        padding-left: 10px;
+        font-size: 30px;
+        }
+    #line>input{
+        width: 100%;
+        height: 20px;
+        padding: 20px; 
+        margin: 5px; 
+        border-color: rgba(217, 174, 108, 0.3);
+    }  
+    #line>textarea{
+        width: 100%;
+        padding: 20px;
+        margin: 5px;
+        border-color: rgba(217, 174, 108, 0.3);
+        border: 1px solid rgba(217, 174, 108, 0.3);
+    } 
+    #line>button{
+        background-color:rgba(245, 159, 31, 0.945) ;
+        padding: 10px;
+        margin: auto;
+        border: 1px solid rgba(245, 159, 31, 0.945);
+        color: black;
+        cursor: pointer;
+        border-radius: 8px;
+    } 
